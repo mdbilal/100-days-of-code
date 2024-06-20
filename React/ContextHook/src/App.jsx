@@ -1,11 +1,11 @@
-import ContextHook from './ContextHook.jsx';
+import ComponentA from './components/ComponentA.jsx';
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <ContextHook />
+      <ComponentA />
     </>
   )
 }
