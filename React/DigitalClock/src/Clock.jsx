@@ -4,10 +4,14 @@ function Clock () {
     const [time, setTime] = useState(new Date());
 
     useEffect(()=> {
-        setInterval(()=> {
+        const intervalId = setInterval(()=> {
             setTime(new Date());
         }, 1000);
-        console.log('effect')
+        
+        return () => {
+            clearInterval(intervalId);
+        }
+
     }, []);
 
     const timeFormat = () => {
