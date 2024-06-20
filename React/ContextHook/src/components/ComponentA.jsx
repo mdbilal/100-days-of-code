@@ -12,7 +12,7 @@ function ComponentA () {
             <h1>Component A</h1>
             <p>hello: {user}</p>
             <UserContext.Provider value={user}>
-                <ComponentB user={user}/>
+                <ComponentB />
             </UserContext.Provider>
         </div>
     );
